@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "description": "Example VPC in infraxys-by-example",
+  "name": "vpc-example",
+  "guid": "1ca6dd5d-a7c2-42da-ae9b-0500685c2401",
+  "roles": [
+    {
+      "roleGuid": "github.com\\infraxys-developer\\infraxys-by-example-practice\\master\\aws-example-config"
+    },
+    {
+      "roleGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\vpc with private, shared and public subnet"
+    }
+  ],
+  "instances": []
+}

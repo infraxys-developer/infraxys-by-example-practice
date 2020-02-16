@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "name": "vpc-example",
+  "guid": "5ec462bb-817f-4a12-8e92-817bd23d332d",
+  "workflows": [
+    {
+      "name": "Create AWS resources",
+      "guid": "3ff09b2d-fd93-410b-985f-2768f4a394bd",
+      "runnableFromWebhook": false,
+      "confirmationMessage": "",
+      "steps": [
+        {
+          "name": "Terraform plan, confirm and apply",
+          "location": 1,
+          "instanceGuid": "guid-46433",
+          "containerGuid": "1ca6dd5d-a7c2-42da-ae9b-0500685c2401",
+          "packetFileGuid": "a9e6c6ce-3278-4714-83cb-674bb7f0fe49"
+        },
+        {
+          "name": "Terraform plan, confirm and apply",
+          "location": 2,
+          "instanceGuid": "87244696-c442-4d28-ad53-eb8c2336fa20",
+          "containerGuid": "1ca6dd5d-a7c2-42da-ae9b-0500685c2401",
+          "packetFileGuid": "a9e6c6ce-3278-4714-83cb-674bb7f0fe49"
+        }
+      ]
+    },
+    {
+      "name": "Destroy AWS resources",
+      "guid": "eda8f8d9-e26e-4f01-b246-90dfeb18755f",
+      "runnableFromWebhook": false,
+      "confirmationMessage": "",
+      "steps": [
+        {
+          "name": "Terraform plan DESTROY, confirm and apply",
+          "location": 1,
+          "instanceGuid": "87244696-c442-4d28-ad53-eb8c2336fa20",
+          "containerGuid": "1ca6dd5d-a7c2-42da-ae9b-0500685c2401",
+          "packetFileGuid": "ab1261a4-01d5-49a5-b0a4-7d22c5a4b276"
+        },
+        {
+          "name": "Terraform plan DESTROY, confirm and apply",
+          "location": 2,
+          "instanceGuid": "guid-46433",
+          "containerGuid": "1ca6dd5d-a7c2-42da-ae9b-0500685c2401",
+          "packetFileGuid": "ab1261a4-01d5-49a5-b0a4-7d22c5a4b276"
+        }
+      ]
+    }
+  ]
+}
